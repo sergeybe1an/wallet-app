@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "cf48e46e-d719-4595-a362-36f9ce3aa834",
+		"name": "WalletApp Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "credit post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 1,\n    \"sum\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/wallet/api/v1/credit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wallet",
+						"api",
+						"v1",
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debit post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 1,\n    \"sum\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/wallet/api/v1/debit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wallet",
+						"api",
+						"v1",
+						"debit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balance get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wallet/api/v1/balance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wallet",
+						"api",
+						"v1",
+						"balance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "history get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wallet/api/v1/history/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wallet",
+						"api",
+						"v1",
+						"history",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
